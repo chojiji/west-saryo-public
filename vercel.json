@@ -1,0 +1,11 @@
+{
+  "framework": "create-react-app",
+  "headers": [
+    {
+      "source": "/api/getPage",
+      "headers": [
+        { "key": "Cache-Control", "value": "s-maxage=86400, stale-while-revalidate" }
+      ]
+    }
+  ]
+}

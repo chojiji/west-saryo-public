@@ -1,0 +1,91 @@
+[
+  {
+    "id": "historia-francorum",
+    "title_ko": "아키텐과 프랑크 연대기",
+    "title_original": "Chronicon Aquitanicum et Francicum",
+    "author_ko": "아데마르 드 샤반",
+    "author_original": "Adémar de Chabannes",
+    "tags": ["중세", "프랑크", "프랑스", "아키텐", "수도사"]
+  },
+  {
+  "id": "the-life-of-saint-louis",
+  "title_ko": "성왕 루이 전기",
+  "title_original": "Histoire de Saint Louis",
+  "author_ko": "장 드 주앵빌",
+  "author_original": "Jean de Joinville",
+  "tags": ["중세", "프랑스", "루이 9세", "십자군", "전기", "연대기"]
+  }
+  ,
+  {
+    "id": "getica",
+    "title_ko": "고트족의 기원과 업적",
+    "title_original": "De origine actibusque Getarum",
+    "author_ko": "요르다네스",
+    "author_original": "Jordanes",
+    "tags": ["중세", "로마", "고트", "게르만", "훈족", "연대기"]
+  },
+  {
+    "id": "magellans-voyage",
+    "title_ko": "마젤란의 세계 일주 항해기",
+    "title_original": "Relazione del primo viaggio intorno al mondo",
+    "author_ko": "안토니오 피가페타",
+    "author_original": "Antonio Pigafetta",
+    "tags": ["대항해시대", "탐험", "마젤란"]
+  },
+  {
+    "id": "liber-gomorrhianus",
+    "title_ko": "고모라의 서",
+    "title_original": "Liber Gomorrhianus",
+    "author_ko": "페트루스 다미아니",
+    "author_original": "Petrus Damiani",
+    "tags": ["중세", "교회사", "성직자", "가톨릭","수도사"]
+  },
+  {
+    "id": "itinerary-benjamin-tudela",
+    "title_ko": "투델라의 벤야민 여행기",
+    "title_original": "The Itinerary of Benjamin of Tudela",
+    "author_ko": "투델라의 벤야민",
+    "author_original": "Benjamin of Tudela",
+    "tags": ["중세", "여행기", "유대인", "지중해", "중동", "상업"]
+  },
+  {
+    "id": "deeds-of-the-bishops-of-hamburg",
+    "title_ko": "함부르크 주교들의 사적",
+    "title_original": "Gesta Hammaburgensis ecclesiae pontificum",
+    "author_ko": "브레멘의 아담",
+    "author_original": "Adam von Bremen",
+    "tags": ["중세", "신성로마제국","북유럽", "스칸디나비아", "바이킹", "빈란드", "탐험"]
+  },
+  {
+    "id": "first-crusade-eyewitnesses",
+    "title_ko": "제1차 십자군: 참전자와 목격자들의 기록",
+    "title_original": "The First Crusade: The Accounts of Eyewitnesses and Participants",
+    "author_ko": "미상",
+    "author_original": "anonymous",
+    "tags": ["중세", "십자군", "편지", "종군기", "예루살렘"]
+  }
+  ,{
+    "id": "asser-life-of-alfred",
+    "title_ko": "알프레드 대왕 전기",
+    "title_original": "Life of King Alfred",
+    "author_ko": "아서",
+    "author_original": "Asser",
+    "tags": ["중세", "영국", "앵글로색슨", "바이킹", "전기"]
+  },
+  {
+    "id": "chronicle-of-guinea",
+    "title_ko": "기니의 발견과 정복 연대기",
+    "title_original": "Crónica dos Feitos da Guiné",
+    "author_ko": "고메스 에아느스 드 주라라",
+    "author_original": "Gomes Eanes de Zurara",
+    "tags": ["대항해시대", "포르투갈", "탐험", "아프리카", "노예무역"]
+  },
+  {
+    "id": "works-of-liudprand",
+    "title_ko": "리우트프란트 저작집",
+    "title_original": "The Works of Liudprand of Cremona",
+    "author_ko": "크레모나의 리우트프란트",
+    "author_original": "Liudprand of Cremona",
+    "tags": ["중세", "신성로마제국", "동로마", "이탈리아"]
+  }
+]
