@@ -5,24 +5,42 @@
     "title_original": "Chronicon Aquitanicum et Francicum",
     "author_ko": "아데마르 드 샤반",
     "author_original": "Adémar de Chabannes",
-    "tags": ["중세", "프랑크", "프랑스", "아키텐", "수도사"]
+    "tags": [
+      "중세",
+      "프랑크",
+      "프랑스",
+      "아키텐",
+      "수도사"
+    ]
   },
   {
-  "id": "the-life-of-saint-louis",
-  "title_ko": "성왕 루이 전기",
-  "title_original": "Histoire de Saint Louis",
-  "author_ko": "장 드 주앵빌",
-  "author_original": "Jean de Joinville",
-  "tags": ["중세", "프랑스", "루이 9세", "십자군", "전기", "연대기"]
-  }
-  ,
+    "id": "the-life-of-saint-louis",
+    "title_ko": "성왕 루이 전기",
+    "title_original": "Histoire de Saint Louis",
+    "author_ko": "장 드 주앵빌",
+    "author_original": "Jean de Joinville",
+    "tags": [
+      "중세",
+      "프랑스",
+      "십자군",
+      "전기",
+      "연대기"
+    ]
+  },
   {
     "id": "getica",
     "title_ko": "고트족의 기원과 업적",
     "title_original": "De origine actibusque Getarum",
     "author_ko": "요르다네스",
     "author_original": "Jordanes",
-    "tags": ["중세", "로마", "고트", "게르만", "훈족", "연대기"]
+    "tags": [
+      "중세",
+      "로마",
+      "고트",
+      "게르만",
+      "훈족",
+      "연대기"
+    ]
   },
   {
     "id": "magellans-voyage",
@@ -30,7 +48,11 @@
     "title_original": "Relazione del primo viaggio intorno al mondo",
     "author_ko": "안토니오 피가페타",
     "author_original": "Antonio Pigafetta",
-    "tags": ["대항해시대", "탐험", "마젤란"]
+    "tags": [
+      "대항해시대",
+      "탐험",
+      "마젤란"
+    ]
   },
   {
     "id": "liber-gomorrhianus",
@@ -38,7 +60,13 @@
     "title_original": "Liber Gomorrhianus",
     "author_ko": "페트루스 다미아니",
     "author_original": "Petrus Damiani",
-    "tags": ["중세", "교회사", "성직자", "가톨릭","수도사"]
+    "tags": [
+      "중세",
+      "교회사",
+      "성직자",
+      "가톨릭",
+      "수도사"
+    ]
   },
   {
     "id": "itinerary-benjamin-tudela",
@@ -46,7 +74,14 @@
     "title_original": "The Itinerary of Benjamin of Tudela",
     "author_ko": "투델라의 벤야민",
     "author_original": "Benjamin of Tudela",
-    "tags": ["중세", "여행기", "유대인", "지중해", "중동", "상업"]
+    "tags": [
+      "중세",
+      "여행기",
+      "유대인",
+      "지중해",
+      "중동",
+      "상업"
+    ]
   },
   {
     "id": "deeds-of-the-bishops-of-hamburg",
@@ -54,7 +89,15 @@
     "title_original": "Gesta Hammaburgensis ecclesiae pontificum",
     "author_ko": "브레멘의 아담",
     "author_original": "Adam von Bremen",
-    "tags": ["중세", "신성로마제국","북유럽", "스칸디나비아", "바이킹", "빈란드", "탐험"]
+    "tags": [
+      "중세",
+      "신성로마제국",
+      "북유럽",
+      "스칸디나비아",
+      "바이킹",
+      "빈란드",
+      "탐험"
+    ]
   },
   {
     "id": "first-crusade-eyewitnesses",
@@ -62,15 +105,27 @@
     "title_original": "The First Crusade: The Accounts of Eyewitnesses and Participants",
     "author_ko": "미상",
     "author_original": "anonymous",
-    "tags": ["중세", "십자군", "편지", "종군기", "예루살렘"]
-  }
-  ,{
+    "tags": [
+      "중세",
+      "십자군",
+      "편지",
+      "종군기",
+      "예루살렘"
+    ]
+  },
+  {
     "id": "asser-life-of-alfred",
     "title_ko": "알프레드 대왕 전기",
     "title_original": "Life of King Alfred",
     "author_ko": "아서",
     "author_original": "Asser",
-    "tags": ["중세", "영국", "앵글로색슨", "바이킹", "전기"]
+    "tags": [
+      "중세",
+      "영국",
+      "앵글로색슨",
+      "바이킹",
+      "전기"
+    ]
   },
   {
     "id": "chronicle-of-guinea",
@@ -78,7 +133,13 @@
     "title_original": "Crónica dos Feitos da Guiné",
     "author_ko": "고메스 에아느스 드 주라라",
     "author_original": "Gomes Eanes de Zurara",
-    "tags": ["대항해시대", "포르투갈", "탐험", "아프리카", "노예무역"]
+    "tags": [
+      "대항해시대",
+      "포르투갈",
+      "탐험",
+      "아프리카",
+      "노예무역"
+    ]
   },
   {
     "id": "works-of-liudprand",
@@ -86,6 +147,85 @@
     "title_original": "The Works of Liudprand of Cremona",
     "author_ko": "크레모나의 리우트프란트",
     "author_original": "Liudprand of Cremona",
-    "tags": ["중세", "신성로마제국", "동로마", "이탈리아"]
+    "tags": [
+      "중세",
+      "신성로마제국",
+      "동로마",
+      "이탈리아"
+    ]
+  },
+  {
+    "id": "gesta-henrici-quinti",
+    "title_ko": "헨리 5세의 업적",
+    "title_original": "Gesta Henrici Quinti",
+    "author_ko": "미상",
+    "author_original": "Anonymous",
+    "tags": [
+      "중세",
+      "영국",
+      "백년전쟁",
+      "아쟁쿠르전투",
+      "종군기",
+      "군사"
+    ]
+  },
+  {
+    "id": "llibre-dels-fets",
+    "title_ko": "아라곤의 하이메 1세 자서전 (업적의 서)",
+    "title_original": "Llibre dels fets",
+    "author_ko": "아라곤의 하이메 1세",
+    "author_original": "James I of Aragon",
+    "tags": [
+      "중세",
+      "에스파냐",
+      "아라곤",
+      "레콩키스타",
+      "자서전"
+    ]
+  },
+  {
+    "id": "res-gestae-saxonicae",
+    "title_ko": "작센족의 위업",
+    "title_original": "Res gestae saxonicae",
+    "author_ko": "코르바이의 비두킨트",
+    "author_original": "Widukind of Corvey",
+    "tags": [
+      "중세",
+      "신성로마제국",
+      "독일",
+      "작센",
+      "오토왕조",
+      "건국",
+      "수도사"
+    ]
+  },
+  {
+    "id": "gesta-stephani",
+    "title_ko": "스테파누스 왕의 업적",
+    "title_original": "Gesta Stephani",
+    "author_ko": "미상",
+    "author_original": "Anonymous",
+    "tags": [
+      "중세",
+      "영국",
+      "노르만",
+      "군사",
+      "연대기"
+    ]
+  },
+  {
+    "id": "chronicon-thietmari",
+    "title_ko": "티트마르 연대기",
+    "title_original": "Chronicon Thietmari",
+    "author_ko": "메르제부르크의 티트마르",
+    "author_original": "Thietmar of Merseburg",
+    "tags": [
+      "중세",
+      "신성로마제국",
+      "독일",
+      "폴란드",
+      "오토왕조",
+      "연대기"
+    ]
   }
 ]
