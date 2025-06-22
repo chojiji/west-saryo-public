@@ -91,7 +91,7 @@ const BookInfoPage = () => {
             {baseInfo.tags.map(tag => (
               <Link
                 key={tag}
-                to={`/?q=${tag}`}
+                to={`/?tags=${tag}`}
                 className="info-tag"
               >
                 #{tag}

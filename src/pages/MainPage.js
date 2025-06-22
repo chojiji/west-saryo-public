@@ -10,9 +10,11 @@ const ITEMS_PER_PAGE = 10;
 const MainPage = () => {
   const { allBooks, isLoading } = useBooks();
   const [sortedBooks, setSortedBooks] = useState([]);
+  const [allUniqueTags, setAllUniqueTags] = useState([]);
   const [searchParams, setSearchParams] = useSearchParams();
 
   const searchTerm = searchParams.get('q') || '';
+  const searchTags = (searchParams.get('tags') || '').split(',').filter(Boolean);
   const currentPage = parseInt(searchParams.get('page') || '1', 10);
 
   useEffect(() => {
@@ -21,60 +23,71 @@ const MainPage = () => {
         a.title_ko.localeCompare(b.title_ko)
       );
       setSortedBooks(sorted);
+      const uniqueTagsSet = new Set();
+      allBooks.forEach(book => {
+        book.tags.forEach(tag => uniqueTagsSet.add(tag.normalize('NFC')));
+      });
+      setAllUniqueTags(Array.from(uniqueTagsSet).sort());
     }
   }, [allBooks]);
 
   const filteredBooks = (sortedBooks || []).filter(book => {
-    if (!searchTerm) return true;
     const lowercasedQuery = searchTerm.toLowerCase().normalize('NFC');
-    return (
+    
+    const matchesText = !searchTerm || (
       book.title_ko.normalize('NFC').toLowerCase().includes(lowercasedQuery) ||
-      book.author_ko.normalize('NFC').toLowerCase().includes(lowercasedQuery) ||
-      book.tags.some(tag => tag.normalize('NFC').toLowerCase().includes(lowercasedQuery))
+      book.author_ko.normalize('NFC').toLowerCase().includes(lowercasedQuery)
     );
+
+    const matchesTags = searchTags.length === 0 || 
+      searchTags.every(st => 
+        book.tags.some(bt => bt.normalize('NFC').toLowerCase() === st.toLowerCase())
+      );
+
+    return matchesText && matchesTags;
   });
 
   const totalPages = Math.ceil(filteredBooks.length / ITEMS_PER_PAGE);
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
   const currentDisplayBooks = filteredBooks.slice(startIndex, startIndex + ITEMS_PER_PAGE);
 
-  const handleSearch = useCallback((query) => {
+  const handleSearch = useCallback(({ textQuery, selectedQueryTags }) => {
     const newParams = new URLSearchParams(searchParams);
 
-    if (query) {
-      newParams.set('q', query);
+    if (textQuery) {
+      newParams.set('q', textQuery);
     } else {
       newParams.delete('q');
     }
 
-    newParams.delete('page');
+    if (selectedQueryTags && selectedQueryTags.length > 0) {
+      newParams.set('tags', selectedQueryTags.join(','));
+    } else {
+      newParams.delete('tags');
+    }
 
+    newParams.delete('page');
     setSearchParams(newParams);
   }, [searchParams, setSearchParams]);
 
   const handlePageChange = (pageNumber) => {
     if (pageNumber >= 1 && pageNumber <= totalPages) {
       const newParams = new URLSearchParams(searchParams);
-
       if (pageNumber === 1) {
         newParams.delete('page');
       } else {
         newParams.set('page', String(pageNumber));
       }
-
       setSearchParams(newParams);
     }
   };
 
   const renderResultsCount = () => {
     if (isLoading) return <p className="results-count">책 목록을 불러오는 중...</p>;
-
     const totalItems = filteredBooks.length;
     if (totalItems === 0) return <p className="results-count">표시할 책이 없습니다.</p>;
-
     const startItem = (currentPage - 1) * ITEMS_PER_PAGE + 1;
     const endItem = startItem + currentDisplayBooks.length - 1;
-
     return (
       <p className="results-count">
         {`${startItem} - ${endItem} / 총 ${totalItems}권`}
@@ -85,7 +98,12 @@ const MainPage = () => {
   return (
     <div className="page-wrapper">
       <main className="main-content">
-        <SearchBar onSearch={handleSearch} initialValue={searchTerm} />
+        <SearchBar 
+          onSearch={handleSearch} 
+          initialText={searchTerm}
+          initialTags={searchTags}
+          allAvailableTags={allUniqueTags} 
+        />
         {renderResultsCount()}
         <BookList books={currentDisplayBooks} isLoading={isLoading} />
         <Pagination

@@ -43,18 +43,6 @@
     ]
   },
   {
-    "id": "magellans-voyage",
-    "title_ko": "마젤란의 세계 일주 항해기",
-    "title_original": "Relazione del primo viaggio intorno al mondo",
-    "author_ko": "안토니오 피가페타",
-    "author_original": "Antonio Pigafetta",
-    "tags": [
-      "대항해시대",
-      "탐험",
-      "마젤란"
-    ]
-  },
-  {
     "id": "liber-gomorrhianus",
     "title_ko": "고모라의 서",
     "title_original": "Liber Gomorrhianus",
@@ -76,9 +64,9 @@
     "author_original": "Benjamin of Tudela",
     "tags": [
       "중세",
+      "지중해",
       "여행기",
       "유대인",
-      "지중해",
       "중동",
       "상업"
     ]
@@ -107,10 +95,10 @@
     "author_original": "anonymous",
     "tags": [
       "중세",
+      "예루살렘",
       "십자군",
       "편지",
-      "종군기",
-      "예루살렘"
+      "종군기"
     ]
   },
   {
@@ -150,7 +138,7 @@
     "tags": [
       "중세",
       "신성로마제국",
-      "동로마",
+      "동로마제국",
       "이탈리아"
     ]
   },
@@ -177,8 +165,8 @@
     "author_original": "James I of Aragon",
     "tags": [
       "중세",
-      "에스파냐",
       "아라곤",
+      "에스파냐",
       "레콩키스타",
       "자서전"
     ]
@@ -227,5 +215,35 @@
       "오토왕조",
       "연대기"
     ]
-  }
+  },
+  {
+  "id": "villehardouin-conquest-of-constantinople",
+  "title_ko": "콘스탄티노폴리스 정복기",
+  "title_original": "De la Conquête de Constantinople",
+  "author_ko": "조프루아 드 빌라르두앵",
+  "author_original": "Geoffroi de Villehardouin",
+  "tags": [
+    "중세",
+    "동로마제국",
+    "콘스탄티노폴리스",
+    "십자군",
+    "기사",
+    "회고록",
+    "베네치아",
+    "전쟁"
+  ]
+},
+  {
+  "id": "landucci-florentine-diary",
+  "title_ko": "피렌체 일기 (1450-1516)",
+  "title_original": "Diario fiorentino dal 1450 al 1516",
+  "author_ko": "루카 란두치",
+  "author_original": "Luca Landucci",
+  "tags": [
+    "르네상스",
+    "피렌체",
+    "일기",
+    "메디치"
+  ]
+}
 ]
