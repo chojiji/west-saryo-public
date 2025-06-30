@@ -5,6 +5,8 @@
     "title_original": "Chronicon Aquitanicum et Francicum",
     "author_ko": "아데마르 드 샤반",
     "author_original": "Adémar de Chabannes",
+    "circa_original_written":1028,
+    "date_added": "2025-06-19",
     "tags": [
       "중세",
       "프랑크",
@@ -19,6 +21,8 @@
     "title_original": "Histoire de Saint Louis",
     "author_ko": "장 드 주앵빌",
     "author_original": "Jean de Joinville",
+    "circa_original_written":1309,
+    "date_added": "2025-06-19",
     "tags": [
       "중세",
       "프랑스",
@@ -33,7 +37,10 @@
     "title_original": "De origine actibusque Getarum",
     "author_ko": "요르다네스",
     "author_original": "Jordanes",
+    "circa_original_written":551,
+    "date_added": "2025-06-19",
     "tags": [
+      "고대",
       "중세",
       "로마",
       "고트",
@@ -48,6 +55,8 @@
     "title_original": "Liber Gomorrhianus",
     "author_ko": "페트루스 다미아니",
     "author_original": "Petrus Damiani",
+    "circa_original_written":1049,
+    "date_added": "2025-06-19",
     "tags": [
       "중세",
       "교회사",
@@ -62,6 +71,8 @@
     "title_original": "The Itinerary of Benjamin of Tudela",
     "author_ko": "투델라의 벤야민",
     "author_original": "Benjamin of Tudela",
+    "circa_original_written":1173,
+    "date_added": "2025-06-19",
     "tags": [
       "중세",
       "지중해",
@@ -77,6 +88,8 @@
     "title_original": "Gesta Hammaburgensis ecclesiae pontificum",
     "author_ko": "브레멘의 아담",
     "author_original": "Adam von Bremen",
+    "circa_original_written":1075,
+    "date_added": "2025-06-19",
     "tags": [
       "중세",
       "신성로마제국",
@@ -93,6 +106,8 @@
     "title_original": "The First Crusade: The Accounts of Eyewitnesses and Participants",
     "author_ko": "미상",
     "author_original": "anonymous",
+    "circa_original_written":1101,
+    "date_added": "2025-06-19",
     "tags": [
       "중세",
       "예루살렘",
@@ -107,6 +122,8 @@
     "title_original": "Life of King Alfred",
     "author_ko": "아서",
     "author_original": "Asser",
+    "circa_original_written":893,
+    "date_added": "2025-06-20",
     "tags": [
       "중세",
       "영국",
@@ -121,6 +138,8 @@
     "title_original": "Crónica dos Feitos da Guiné",
     "author_ko": "고메스 에아느스 드 주라라",
     "author_original": "Gomes Eanes de Zurara",
+    "circa_original_written":1453,
+    "date_added": "2025-06-20",
     "tags": [
       "대항해시대",
       "포르투갈",
@@ -135,6 +154,8 @@
     "title_original": "The Works of Liudprand of Cremona",
     "author_ko": "크레모나의 리우트프란트",
     "author_original": "Liudprand of Cremona",
+    "circa_original_written":970,
+    "date_added": "2025-06-20",
     "tags": [
       "중세",
       "신성로마제국",
@@ -148,6 +169,8 @@
     "title_original": "Gesta Henrici Quinti",
     "author_ko": "미상",
     "author_original": "Anonymous",
+    "circa_original_written":1417,
+    "date_added": "2025-06-21",
     "tags": [
       "중세",
       "영국",
@@ -163,6 +186,8 @@
     "title_original": "Llibre dels fets",
     "author_ko": "아라곤의 하이메 1세",
     "author_original": "James I of Aragon",
+    "circa_original_written":1270,
+    "date_added": "2025-06-21",
     "tags": [
       "중세",
       "아라곤",
@@ -177,6 +202,8 @@
     "title_original": "Res gestae saxonicae",
     "author_ko": "코르바이의 비두킨트",
     "author_original": "Widukind of Corvey",
+    "circa_original_written":967,
+    "date_added": "2025-06-21",
     "tags": [
       "중세",
       "신성로마제국",
@@ -193,6 +220,8 @@
     "title_original": "Gesta Stephani",
     "author_ko": "미상",
     "author_original": "Anonymous",
+    "circa_original_written":1148,
+    "date_added": "2025-06-21",
     "tags": [
       "중세",
       "영국",
@@ -207,6 +236,8 @@
     "title_original": "Chronicon Thietmari",
     "author_ko": "메르제부르크의 티트마르",
     "author_original": "Thietmar of Merseburg",
+    "circa_original_written":1018,
+    "date_added": "2025-06-21",
     "tags": [
       "중세",
       "신성로마제국",
@@ -217,33 +248,121 @@
     ]
   },
   {
-  "id": "villehardouin-conquest-of-constantinople",
-  "title_ko": "콘스탄티노폴리스 정복기",
-  "title_original": "De la Conquête de Constantinople",
-  "author_ko": "조프루아 드 빌라르두앵",
-  "author_original": "Geoffroi de Villehardouin",
-  "tags": [
-    "중세",
-    "동로마제국",
-    "콘스탄티노폴리스",
-    "십자군",
-    "기사",
-    "회고록",
-    "베네치아",
-    "전쟁"
-  ]
-},
+    "id": "villehardouin-conquest-of-constantinople",
+    "title_ko": "콘스탄티노폴리스 정복기",
+    "title_original": "De la Conquête de Constantinople",
+    "author_ko": "조프루아 드 빌라르두앵",
+    "author_original": "Geoffroi de Villehardouin",
+    "circa_original_written":1213,
+    "date_added": "2025-06-22",
+    "tags": [
+      "중세",
+      "동로마제국",
+      "콘스탄티노폴리스",
+      "십자군",
+      "기사",
+      "회고록",
+      "베네치아",
+      "전쟁"
+    ]
+  },
   {
-  "id": "landucci-florentine-diary",
-  "title_ko": "피렌체 일기 (1450-1516)",
-  "title_original": "Diario fiorentino dal 1450 al 1516",
-  "author_ko": "루카 란두치",
-  "author_original": "Luca Landucci",
-  "tags": [
-    "르네상스",
-    "피렌체",
-    "일기",
-    "메디치"
-  ]
-}
+    "id": "landucci-florentine-diary",
+    "title_ko": "피렌체 일기 (1450-1516)",
+    "title_original": "Diario fiorentino dal 1450 al 1516",
+    "author_ko": "루카 란두치",
+    "author_original": "Luca Landucci",
+    "circa_original_written":1516,
+    "date_added": "2025-06-22",
+    "tags": [
+      "르네상스",
+      "피렌체",
+      "일기",
+      "메디치"
+    ]
+  },
+  {
+    "id": "diary-siege-of-constantinople",
+    "title_ko": "콘스탄티노폴리스 함락 일지 (1453)",
+    "title_original": "Giornale dell'assedio di Costantinopoli",
+    "author_ko": "니콜로 바르바로",
+    "author_original": "Niccolò Barbaro",
+    "circa_original_written":1453,
+    "date_added": "2025-06-23",
+    "tags": [
+      "르네상스",
+      "동로마제국",
+      "오스만",
+      "콘스탄티노폴리스",
+      "전쟁",
+      "일지"
+    ]
+  },
+  {
+    "id": "ghiberti-commentarii",
+    "title_ko": "코멘타리",
+    "title_original": "I Commentarii",
+    "author_ko": "로렌초 기베르티",
+    "author_original": "Lorenzo Ghiberti",
+    "circa_original_written":1455,
+    "date_added": "2025-06-23",
+    "tags": [
+      "르네상스",
+      "예술사",
+      "자서전",
+      "조각가",
+      "피렌체",
+      "미술이론"
+    ]
+  },
+  {
+    "id": "frontinus-on-the-aqueducts-of-rome",
+    "title_ko": "로마의 수도에 관하여",
+    "title_original": "De aquaeductu urbis Romae",
+    "author_ko": "섹스투스 율리우스 프론티누스",
+    "author_original": "Sextus Julius Frontinus",
+    "circa_original_written":97,
+    "date_added": "2025-06-23",
+    "tags": [
+      "고대",
+      "로마",
+      "행정",
+      "공학",
+      "수도",
+      "도시",
+      "기술"
+    ]
+  },
+  {
+    "id": "eutropius-breviarium",
+    "title_ko": "로마사 요약",
+    "title_original": "Breviarium historiae Romanae",
+    "author_ko": "에우트로피우스",
+    "author_original": "Eutropius",
+    "circa_original_written":369,
+    "date_added": "2025-06-23",
+    "tags": [
+      "고대",
+      "로마",
+      "역사서"
+    ]
+  },
+  {
+    "id": "vasco-da-gama-first-voyage",
+    "title_ko": "바스코 다 가마의 첫 항해 일지",
+    "title_original": "Roteiro da viagem de Vasco da Gama",
+    "author_ko": "미상 (알바루 벨류 또는 주앙 드 사로 추정)",
+    "author_original": "Anonymous (attributed to Álvaro Velho or João de Sá)",
+    "circa_original_written":1499,
+    "date_added": "2025-06-23",
+    "tags": [
+      "대항해시대",
+      "포르투갈",
+      "탐험",
+      "항해일지",
+      "바스코다가마",
+      "인도",
+      "아프리카"
+    ]
+  }
 ]

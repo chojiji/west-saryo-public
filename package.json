@@ -17,9 +17,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "node ./generate-sitemap.js && node prerender.js && react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "generate-sitemap": "node ./generate-sitemap.js"
   },
   "eslintConfig": {
     "extends": [

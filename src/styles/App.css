@@ -253,12 +253,67 @@ html {
   scrollbar-color: #c1c1c1 #f1f1f1;
 }
 
-.results-count {
-  text-align: center;
-  color: #6c757d;
+.results-and-sort {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  
+  align-items: center;
   margin-top: 15px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.results-count {
+  grid-column: 2;
   font-size: 0.9em;
+  color: #555;
+  text-align: center;
+  margin: 0;
+}
+
+.sort-controls {
+  grid-column: 3;
+  display: flex;
+  align-items:center;
+  justify-content: flex-end; 
+  gap: 10px;
+  margin-right: 50px;
+}
+
+.sort-label {
+  font-size: 0.9em;
+  color: #666;
+  white-space: nowrap;
+}
+
+.sort-option {
+  background: none;
+  border: none;
+  padding: 5px 8px;
+  cursor: pointer;
+  font-size: 0.9em;
+  color: #888;
+  transition: color 0.2s ease-in-out, font-weight 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  white-space: nowrap;
+}
+
+.sort-option:hover {
+  color: #333;
+}
+
+.sort-option.active-sort {
+  font-weight: bold;
+  color: #000;
+}
+
+.sort-icon {
+  font-size: 0.7em;
+  vertical-align: middle;
+  margin-left: 2px;
 }
 
 .book-list {

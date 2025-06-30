@@ -21,7 +21,7 @@ const BookReaderPage = () => {
 
       try {
         let details = detailsInfo;
-        if (!details || details.id !== bookId) {
+        if (!details) {
           const detailsResponse = await fetch(`/data/details/${bookId}.json`);
           if (!detailsResponse.ok) throw new Error('책 상세 정보를 찾을 수 없습니다.');
           details = await detailsResponse.json();

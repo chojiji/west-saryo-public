@@ -1,6 +1,5 @@
 User-agent: *
 
-Allow: /
+Disallow: /read/
 
-Disallow: /data/details/
-Disallow: /images/
+Sitemap: https://west-saryo.vercel.app/sitemap.xml

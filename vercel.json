@@ -1,5 +1,6 @@
 {
   "framework": "create-react-app",
+  
   "headers": [
     {
       "source": "/api/getPage",
@@ -36,6 +37,20 @@
           "value": "public, max-age=86400, immutable"
         }
       ]
+    }
+  ],
+
+  "rewrites": [
+    {
+      "source": "/book/:slug",
+      "has": [
+        {
+          "type": "header",
+          "key": "User-Agent",
+          "value": "(.*)(Googlebot|bingbot|Yahoo|Baiduspider|YandexBot)(.*)"
+        }
+      ],
+      "destination": "/prerendered/:slug.html"
     }
   ]
 }

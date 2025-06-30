@@ -5,7 +5,37 @@ import SearchBar from '../components/SearchBar';
 import BookList from '../components/BookList';
 import Pagination from '../components/Pagination';
 
+const SORT_BY_TITLE = 'title';
+const SORT_BY_DATE = 'date';
+const SORT_BY_ADDED = 'added';
+
+const SORT_DIRECTION_ASC = 'asc';
+const SORT_DIRECTION_DESC = 'desc';
+
 const ITEMS_PER_PAGE = 10;
+
+const sortBooks = (books, sortKey, sortDirection) => {
+  if (!books || books.length === 0) {
+    return [];
+  }
+
+  return [...books].sort((a, b) => {
+    let comparison = 0;
+    
+    if (sortKey === SORT_BY_TITLE) {
+      comparison = a.title_ko.localeCompare(b.title_ko);
+    } else if (sortKey === SORT_BY_DATE) {
+      const dateA = a.circa_original_written || (sortDirection === SORT_DIRECTION_ASC ? Infinity : -Infinity);
+      const dateB = b.circa_original_written || (sortDirection === SORT_DIRECTION_ASC ? Infinity : -Infinity);
+      comparison = dateA - dateB;
+    } else if (sortKey === SORT_BY_ADDED) {
+      const dateA = new Date(a.date_added);
+      const dateB = new Date(b.date_added);
+      comparison = dateA - dateB;
+    }
+    return sortDirection === SORT_DIRECTION_ASC ? comparison : -comparison;
+  });
+};
 
 const MainPage = () => {
   const { allBooks, isLoading } = useBooks();
@@ -17,19 +47,25 @@ const MainPage = () => {
   const searchTags = (searchParams.get('tags') || '').split(',').filter(Boolean);
   const currentPage = parseInt(searchParams.get('page') || '1', 10);
 
+  const initialSortKey = searchParams.get('sort_by') || SORT_BY_TITLE;
+  const initialSortDirection = searchParams.get('sort_dir') || SORT_DIRECTION_ASC;
+
+  const [currentSortKey, setCurrentSortKey] = useState(initialSortKey);
+  const [currentSortDirection, setCurrentSortDirection] = useState(initialSortDirection);
+
   useEffect(() => {
     if (allBooks && allBooks.length > 0) {
-      const sorted = [...allBooks].sort((a, b) =>
-        a.title_ko.localeCompare(b.title_ko)
-      );
-      setSortedBooks(sorted);
+      const newlySortedBooks = sortBooks(allBooks, currentSortKey, currentSortDirection);
+      setSortedBooks(newlySortedBooks);
       const uniqueTagsSet = new Set();
       allBooks.forEach(book => {
         book.tags.forEach(tag => uniqueTagsSet.add(tag.normalize('NFC')));
       });
       setAllUniqueTags(Array.from(uniqueTagsSet).sort());
+    } else {
+      setSortedBooks([]);
     }
-  }, [allBooks]);
+  }, [allBooks, currentSortKey, currentSortDirection]);
 
   const filteredBooks = (sortedBooks || []).filter(book => {
     const lowercasedQuery = searchTerm.toLowerCase().normalize('NFC');
@@ -82,6 +118,22 @@ const MainPage = () => {
     }
   };
 
+  const handleSort = useCallback((sortKey) => {
+    let newDirection = SORT_DIRECTION_ASC;
+    if (currentSortKey === sortKey) {
+      newDirection = currentSortDirection === SORT_DIRECTION_ASC ? SORT_DIRECTION_DESC : SORT_DIRECTION_ASC;
+    }
+
+    setCurrentSortKey(sortKey);
+    setCurrentSortDirection(newDirection);
+
+    const newParams = new URLSearchParams(searchParams);
+    newParams.set('sort_by', sortKey);
+    newParams.set('sort_dir', newDirection);
+    newParams.delete('page');
+    setSearchParams(newParams);
+  }, [currentSortKey, currentSortDirection, searchParams, setSearchParams]);
+
   const renderResultsCount = () => {
     if (isLoading) return <p className="results-count">책 목록을 불러오는 중...</p>;
     const totalItems = filteredBooks.length;
@@ -104,7 +156,46 @@ const MainPage = () => {
           initialTags={searchTags}
           allAvailableTags={allUniqueTags} 
         />
-        {renderResultsCount()}
+        <div className="results-and-sort">
+          {renderResultsCount()}
+          <div className="sort-controls">
+            <span className="sort-label">정렬:</span>
+            <button
+              className={`sort-option ${currentSortKey === SORT_BY_TITLE ? 'active-sort' : ''}`}
+              onClick={() => handleSort(SORT_BY_TITLE)}
+            >
+              제목순
+              {currentSortKey === SORT_BY_TITLE && (
+                <span className="sort-icon">
+                  {currentSortDirection === SORT_DIRECTION_ASC ? ' ▲' : ' ▼'}
+                </span>
+              )}
+            </button>
+            <button
+              className={`sort-option ${currentSortKey === SORT_BY_DATE ? 'active-sort' : ''}`}
+              onClick={() => handleSort(SORT_BY_DATE)}
+            >
+              연도순
+              {currentSortKey === SORT_BY_DATE && (
+                <span className="sort-icon">
+                  {currentSortDirection === SORT_DIRECTION_ASC ? ' ▲' : ' ▼'}
+                </span>
+              )}
+            </button>
+            <button
+              className={`sort-option ${currentSortKey === SORT_BY_ADDED ? 'active-sort' : ''}`}
+              onClick={() => handleSort(SORT_BY_ADDED)}
+            >
+              등록순
+              {currentSortKey === SORT_BY_ADDED && (
+                <span className="sort-icon">
+                  {currentSortDirection === SORT_DIRECTION_ASC ? ' ▲' : ' ▼'}
+                </span>
+              )}
+            </button>
+          </div>
+        </div>
+        
         <BookList books={currentDisplayBooks} isLoading={isLoading} />
         <Pagination
           currentPage={currentPage}
